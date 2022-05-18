@@ -1,15 +1,15 @@
 function isPalindrome(array) {
     if (array[0]===array[array.length-1]) {
-        if (array.length===3 || array.length===2) {
-            return 'chuỗi đối xứng';
+        if ((array.length===3) || (array.length===2)) {
+            return true;
         }
         else {
             array.pop();
             array.shift();
-            isPalindrome(array);
+            return  isPalindrome(array);
         }
     }
     else {
-        return 'chuỗi không đối xứng';
+        return false;
     }
 }

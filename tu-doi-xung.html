@@ -9,14 +9,13 @@
 <script>
 let stringCheck = prompt('Nhập chuỗi').toString();
 let arr = stringCheck.split('');
-isPalindrome(arr);
-document.write(isPalindrome(arr));
-// if (isPalindrome(arr)) {
-//     document.write('Chuỗi đối xứng');
-// }
-// else (!isPalindrome()){
-//     document.write('Chuỗi không đối xứng');
-// }
+// document.write(isPalindrome(arr));
+if (isPalindrome(arr)) {
+    document.write('Chuỗi đối xứng');
+}
+else {
+    document.write('Chuỗi không đối xứng')
+}
 </script>
 </body>
 </html>
